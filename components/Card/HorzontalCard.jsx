@@ -1,5 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
+
+import UserOrbit from "../../public/images/orbit.png";
 
 import styles from "./card.module.css";
 
@@ -12,7 +15,7 @@ function HorzontalCard(props) {
       }`}
     >
       <picture className={styles.card__image__wrapper}>
-        <img src="./images/orbit.png" alt="Card Image" />
+        <Image src={UserOrbit} alt="Card Image" />
       </picture>
 
       <figcaption className={styles.card__details}>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { BsFillStarFill } from "react-icons/bs";
 
 import styles from "./card.module.css";
@@ -8,7 +9,7 @@ function AgentCard(props) {
   return (
     <figure className={styles.agent__card__body}>
       <picture className={styles.agent__card__image}>
-        <img src={image} alt={name} />
+        <Image src={image} alt={name} width={80} height={80} />
       </picture>
 
       <figcaption className={styles.agent__card__description}>

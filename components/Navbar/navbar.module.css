@@ -22,7 +22,8 @@
 }
 
 .logo__wrapper img {
-  width: 15rem;
+  width: 12rem;
+  height: 3rem;
 }
 
 .profile__section {
@@ -72,6 +73,7 @@
 
 .profile__wrapper img {
   width: 2rem;
+  height: 2rem;
   border: 0.1rem solid var(--white);
   border-radius: 50%;
 }

@@ -2,7 +2,7 @@
   background: url("../../public/images/footer-img.png") no-repeat;
   background-position: bottom right;
   background-color: var(--richBlack);
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding: 2rem 0;
 }
 
@@ -30,7 +30,8 @@
 }
 
 .footer__logo__details .footer__logo__wrapper img {
-  width: 15rem;
+  width: 12rem;
+  height: 2.5rem;
 }
 
 .footer__description {
