@@ -1,0 +1,135 @@
+.footer__wrapper {
+  background: url("../../public/images/footer-img.png") no-repeat;
+  background-position: bottom right;
+  background-color: var(--richBlack);
+  margin-top: 10rem;
+  padding: 2rem 0;
+}
+
+.footer__wrapper .footer__top {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-gap: 15rem;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+
+  color: var(--silver);
+  border-bottom: 0.1rem solid var(--darkBlue);
+}
+
+@media (max-width: 900px) {
+  .footer__wrapper .footer__top {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__wrapper .footer__top {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__logo__details .footer__logo__wrapper img {
+  width: 15rem;
+}
+
+.footer__description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+}
+
+.social__network_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.social__network_wrapper li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3rem;
+  height: 3rem;
+  background: var(--oxfordBlue);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.footer__links .link__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.footer__links ul {
+  list-style: none;
+}
+
+.footer__links ul li a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: 0.3s all linear;
+  padding: 0.5rem 0;
+  color: var(--silver);
+}
+
+.footer__links ul li a:hover {
+  color: var(--mainBlue);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--silver);
+  padding: 2rem 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__bottom p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .footer__bottom p {
+    padding: 2rem;
+  }
+}
+
+.site__rules ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .site__rules ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.site__rules ul li a {
+  display: block;
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .site__rules ul li a {
+    padding: 1rem 0;
+  }
+}

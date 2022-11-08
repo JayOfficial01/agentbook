@@ -1,0 +1,31 @@
+.pagination {
+  max-width: 35rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.pagination ul li a {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: 0.1rem solid var(--outline);
+  border-radius: 0.5rem;
+  color: var(--gray);
+}
+
+.pagination ul li:first-child a,
+.pagination ul li:last-child a {
+  border: none;
+}
+
+.pagination ul li:nth-child(2) a {
+  background: var(--liteBlueBg);
+  color: var(--mainBlue);
+}

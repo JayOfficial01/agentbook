@@ -1,0 +1,17 @@
+.section__wrapper {
+  padding: 6rem 1.5rem;
+}
+
+.agents__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem 3rem;
+
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .agents__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

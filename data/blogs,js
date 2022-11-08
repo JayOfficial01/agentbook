@@ -1,0 +1,29 @@
+export const blogs = [
+  {
+    date: "MARCH 21, 2022",
+    readTime: 5,
+    image: "./images/houses/house-one.jpg",
+    title: "How to get multiple offers on your home",
+    publisherImg: "./images/users/blogger-one.png",
+    publisherName: "Joan Hollie",
+    status: "Selling",
+  },
+  {
+    date: "MARCH 21, 2022",
+    readTime: 5,
+    image: "./images/houses/house-two.jpg",
+    title: "10 home buying tips for first-time home buyers",
+    publisherImg: "./images/users/blogger-two.png",
+    publisherName: "tim hortons",
+    status: "Buying",
+  },
+  {
+    date: "MARCH 21, 2022",
+    readTime: 5,
+    image: "./images/houses/house-three.jpg",
+    title: "15 simple and relaxing  decor ideas to transform your home ho",
+    publisherImg: "./images/users/blogger-three.png",
+    publisherName: "Joan Hollie",
+    status: "Buying",
+  },
+];

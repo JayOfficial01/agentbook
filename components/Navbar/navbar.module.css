@@ -1,0 +1,133 @@
+.navbar {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar.navbar__active {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.logo__wrapper img {
+  width: 15rem;
+}
+
+.profile__section {
+  display: flex;
+  align-items: stretch;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 0.1rem solid var(--white);
+  border-radius: 0.4rem;
+}
+
+.profile__dropdown:hover > .dropdown {
+  display: block;
+}
+
+.profile__dropdown {
+  position: relative;
+}
+
+.profile__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 0.1rem solid var(--white);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  width: 7rem;
+
+  cursor: pointer;
+}
+
+.hamburger__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.profile__wrapper img {
+  width: 2rem;
+  border: 0.1rem solid var(--white);
+  border-radius: 50%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+
+  width: 20rem;
+
+  background: var(--white);
+
+  border-radius: 0.4rem;
+
+  display: none;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown ul li {
+  padding: 0 1.5rem;
+
+  transition: 0.3s all linear;
+}
+
+.dropdown ul li:hover {
+  color: var(--mainBlue);
+}
+
+.dropdown ul li:last-child {
+  color: var(--redColor);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.dropdown ul li:last-child:hover {
+  background: var(--redColor);
+  color: var(--white);
+}
+
+.dropdown ul li a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.dropdown ul li a .icon {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.dropdown ul li a .menu__link__text {
+  font-size: 1.4rem;
+}
