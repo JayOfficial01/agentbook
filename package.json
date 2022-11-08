@@ -1,11 +1,14 @@
 {
+  "homepage": "http://JayOfficial01.github.io/agentbook",
   "name": "agentbook",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "13.0.2",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "eslint": "8.27.0",
-    "eslint-config-next": "13.0.2"
+    "eslint-config-next": "13.0.2",
+    "gh-pages": "^4.0.0"
   }
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import { BsInstagram, BsDribbble, BsTwitter, BsYoutube } from "react-icons/bs";
-import { footerLinks } from "../../data/footer";
+import Image from "next/image";
 
+import Logo from "../../public/images/logo.png";
+import { footerLinks } from "../../data/footer";
 import styles from "./footer.module.css";
 
 function Footer() {
@@ -11,7 +13,7 @@ function Footer() {
         <article className={styles.footer__top}>
           <article className={styles.footer__logo__details}>
             <picture className={styles.footer__logo__wrapper}>
-              <img src="./images/logo.png" alt="Site logo" />
+              <Image src={Logo} alt="Site logo" />
             </picture>
             <p className={styles.footer__description}>
               Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl

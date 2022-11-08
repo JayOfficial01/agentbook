@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+
+import Logo from "../../public/images/logo.png";
+import Flag from "../../public/images/flags/flag.png";
+import ProfileImage from "../../public/images/users/dave-lordsky.png";
+
 import {
   BsList,
   BsFillPersonFill,
@@ -17,7 +23,7 @@ const ProfileDropDown = () => {
           <BsList />
         </span>
 
-        <img src="./images/users/dave-lordsky.png" alt="Profile Image" />
+        <Image src={ProfileImage} alt="Profile Image" />
       </article>
 
       <article className={styles.dropdown}>
@@ -75,12 +81,12 @@ function Navbar() {
     >
       <article className={`container ${styles.navbar__container}`}>
         <Link href="/" className={styles.logo__wrapper}>
-          <img src="./images/logo.png" alt="Site Logo" />
+          <Image src={Logo} alt="Site Logo" />
         </Link>
 
         <article className={styles.profile__section}>
           <article className={styles.flag}>
-            <img src="./images/flags/flag.png" alt="Country Flag" />
+            <Image src={Flag} alt="Country Flag" />
           </article>
           <ProfileDropDown />
         </article>

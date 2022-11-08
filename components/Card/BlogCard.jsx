@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   BsFillCalendarDateFill,
   BsFillBookFill,
@@ -29,7 +30,7 @@ function BlogCard(props) {
       </article>
 
       <picutre className={styles.blog__image__wrapper}>
-        <img src={image} alt={title} />
+        <Image src={image} alt={title} width={300} height={200} />
       </picutre>
 
       <figcaption className={styles.blog__card__details}>
@@ -37,7 +38,12 @@ function BlogCard(props) {
 
         <article className={styles.card__footer}>
           <article className={styles.publish__by}>
-            <img src={publisherImg} alt={publisherName} />
+            <Image
+              src={publisherImg}
+              alt={publisherName}
+              width={50}
+              height={50}
+            />
             <p className={styles.publisher__name}>{publisherName} </p>
           </article>
 
