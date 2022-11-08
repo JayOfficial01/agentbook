@@ -1,6 +1,6 @@
 import React from "react";
 
-import Searchbar from "../SearchBar/Searchbar";
+import Searchbar from "../Searchbar/Searchbar";
 import styles from "./header.module.css";
 
 function Header() {
